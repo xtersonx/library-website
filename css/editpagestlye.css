@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  
+  border-radius: 3px;
+  cursor: pointer;
+  transition: right 0.4s ease;
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+}
+
+.btn.click {
+  right: 260px;
+}
+
+.btn span {
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.btn.click span:before {
+  content: '\f00d';
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  right: -250px;
+  background: transparent;
+  transition: right 0.4s ease; 
+
+
+
+
+
+}
+
+.sidebar.show {
+  right: 0px; 
+}
+
+.sidebar .text {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  
+  letter-spacing: 1px;
+
+
+
+  background: transparent;
+  
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  
+
+}
+
+nav ul {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+
+
+  
+  background: transparent;
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  
+  
+
+  transition: box-shadow 0.5s ease;
+
+
+
+
+  
+}
+
+
+
+nav ul li {
+  line-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a{
+  color:rgb(216, 133, 25);
+
+  font-size: 20;
+
+  
+  background: transparent;
+  border-left-color: rgb(216, 133, 25);
+
+
+  background: transparent;
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  
+  
+
+}
+nav ul li a:hover{
+  
+  box-shadow: rgb(128, 7, 7);
+  color: rgb(216, 133, 25);
+  
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a .feat-show {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 80px;
+}
+nav ul li.active ul li a{
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+  
+}
+nav ul ul li a:hover{
+  color:  rgb(216, 133, 25)!important;
+  
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+  
+  
+  
+}
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+  color:  rgb(216, 133, 25);
+}
+
+
+
+
+
+
+
+
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #202020;
+  z-index: -1;
+  text-align: center;
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 600;
+}
+.content p{
+  font-size: 30px;
+  font-weight: 500;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    height: 80px;
+  }
+  h2{
+    margin-top: 50;
+    margin-left: 700;
+  }
+  #htmlcontent #addbook{
+    margin-top: 50;
+    
+  }
+  body{
+    background-image: url(../media/addp.jpg);
+  }
+
+  #addbook {
+    
+ 
+    margin-bottom: 100;
+    margin-left: 480;
+    border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background: rgb(177, 102, 10);
+  color: white;
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+  }
+  #addau{
+    
+  
+    margin-left: 20;
+    border-radius: 10;
+    border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  
+
+
+    
+  background: rgb(177, 102, 10);
+  color: white;
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+  }
+  #addcat{
+  
+ 
+    margin-left: 20;
+    border-radius: 10;
+    border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+ 
+  background: rgb(177, 102, 10);
+  color: white;
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    
+  }
+  #edit{
+    margin-left: 20;
+    border-radius: 10;
+    border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+
+  
+  }
+  
+
+
+#editbooks{
+    height: 30px; 
+  overflow-y: auto;
+  
+}
+
+#bimg{
+  height: 100;
+  width: 100;
+}
+
+
+#bookinf {
+  max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 20px;
+    
+
+
+    
+  background: transparent;
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+#bookinf input[type="text"],
+#bookinf select {
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+}
+
+#bookinf label {
+  display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:rgb(177, 102, 10);
+}
+
+#bookinf button {
+  background-color: rgb(177, 102, 10);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#bookinf button:hover {
+  background-color: #aaa02d;
+}
+
+#bookinf a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#bookinf select {
+  padding: 8px;
+}
+
+#bookinf label {
+  margin-top: 10px;
+}
+#title{
+  margin-bottom: 10;
+}
+
+#active{
+
+
+
+  color:  rgb(216, 133, 25);
+  font-size: 20;
+
+
+  background: transparent;
+  border-left-color: rgb(216, 133, 25);
+
+
+
+
+
+}
+#chpdf{
+  margin-bottom: 10;
+}
+#desc{
+  width: 360;
+  
+  border-radius: 20px;
+  padding-top: 10;
+  padding-left: 5;
+
+  
+  background: transparent;
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  color:white
+}
+#remove{
+  margin-top: 10;
+  height: 35;
+  margin-left: 300;
+  
+}
+
+#remove img{
+  height: 15;
+  width: 15;
+}
+
+
+
+#authinf {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 20px;
+  
+
+
+  
+background: transparent;
+
+
+backdrop-filter: blur(20px);
+box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+#authinf input[type="text"],
+#authinf select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+}
+
+#authinf label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:rgb(177, 102, 10);
+}
+
+#authinf button {
+  background-color: rgb(177, 102, 10);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+
+#authinf button:hover {
+  background-color: #aaa02d;
+}
+
+#authinf a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#authinf select {
+  padding: 8px;
+}
+
+#authinf label {
+  margin-top: 10px;
+}
+
+
+#catinf {
+  
+  max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 20px;
+    
+
+
+    
+  background: transparent;
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+#catinf input[type="text"],
+#catinf select {
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+}
+
+#catinf label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:rgb(177, 102, 10);
+}
+
+#catinf button {
+  background-color: rgb(177, 102, 10);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#catinf button:hover {
+  background-color: #aaa02d;
+}
+
+#catinf a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#catinf select {
+  padding: 8px;
+}
+
+#catinf label {
+  margin-top: 10px;
+}
+
+#remove3 img{
+  height: 15;
+  width: 15;
+}
+#remove3{
+  margin-top: 10;
+  height: 35;
+  margin-left: 300;
+  
+}
+#remove2{
+  margin-top: 10;
+  height: 35;
+  margin-left: 300;
+  
+}
+
+#remove2 img{
+  height: 15;
+  width: 15;
+}
+
+
+h3{
+  color:white;
+}
+
+#htmlcontent{
+  margin-left: 700;
+}
+#editbookf select{
+
+  width: 150;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+  
+}
+
+
+#readlin{
+  font-weight: bold;
+  color: rgb(177, 102, 10);
+}
+
+#editauth select{
+
+  
+  width: 150;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+}
+
+#editcat select{
+
+
+
+  
+  width: 150;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}

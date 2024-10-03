@@ -1,0 +1,147 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background-image: url('../media/libback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  
+}
+
+.showeye{
+  margin-left: 22;
+
+}
+
+
+#alrph{
+  font-weight: 600;
+  font-size: large;
+}
+#logph{
+  font-size: large;
+}
+#countdown{
+  font-weight: 600;
+  font-size: large;
+  background: transparent;
+  
+  
+  
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+
+#signfo {
+  max-width: 400px;
+  margin: 100px auto;
+  margin-top: 70px;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.5s ease;
+  
+}
+
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],input[type="checkbox"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,input[type="checkbox"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+button[type="submit"] {
+  background-color: rgb(176, 108, 24);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #aaa02d;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#logph:hover {
+  text-decoration: underline;
+  color: rgb(254, 252, 249);;
+}
+#agree{
+  margin-right: 150;
+}
+#cek1{
+  transform: scale(1.5);
+}
+.whyx{
+  color: rgb(244, 123, 2);
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 15;
+  margin-right: 50;
+  font-weight: bold;
+}
+
+#namec{
+  margin-bottom: 30;
+}
+
+#lastc{
+  margin-bottom: 30;
+}
